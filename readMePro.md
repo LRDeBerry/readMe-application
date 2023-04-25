@@ -11,9 +11,9 @@
 <body>
 <header class="p-5 mb-4 header bg-light">
     <div class="container">
-        <h1 class="display-4">Professional ReadMe</h1>
+        <h1 class="display-4">test</h1>
         <h2>Description</h2>
-        <p>An Application used to create a ReadMe file.</p>
+        <p>an application using inquirer and node to create a readme.</p>
         <h2>Table Of Contents</h2>
         <ul>
         <li>
@@ -32,13 +32,13 @@
         <h2 id="github">Github</h2>
         <p>My Github Link to all my repositories is github.com/LRDeBerry</p>
         <h2 id="usage">Usage</h2>
-        <p>using Node.js and Inquirer</p>
+        <p>by answering questions via inquirer and node </p>
         <h2 id="credits">Credits</h2>
-        <p>Just me</p>
+        <p>Lee DeBerry</p>
         <h2 id="communication">Communication</h2>
         <p>You can reach me via Email,Text,Call</p>
         <ul>
-        <li>My Email/Phone Number is 360-325-5314 ldeberry1992@gmail.com</li>
+        <li>My Email/Phone Number is ldeberry1992@gmail.com</li>
         </ul>
     
 </body>
