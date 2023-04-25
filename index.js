@@ -1,6 +1,8 @@
+// TODO: Include packages needed for this application
 const inquirer = require(`inquirer`);
 const fs = require(`fs`);
 
+// TODO: HTML/MD file created for user
 const generateHTML = ({ name, descritpion, usage, github, credits, communication, data }) =>
     `<!DOCTYPE html>
 <html lang="en">
@@ -48,13 +50,13 @@ const generateHTML = ({ name, descritpion, usage, github, credits, communication
 </body>
 </html>`;
 
-
+// TODO: Create an array of questions for user input
 inquirer
     .prompt([
         {
             type: `input`,
             name: `name`,
-            message: `What is Your Name?`
+            message: `What is Your Name of your Project?`
         },
         {
             type: `input`,
@@ -88,6 +90,7 @@ inquirer
             message: `Enter your Email or Phone Number`
         },
 
+        // TODO: Writing File to location designated
     ])
     .then((answers) => {
         console.log(answers);
