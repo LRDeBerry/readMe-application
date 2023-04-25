@@ -1,7 +1,7 @@
 const inquirer = require(`inquirer`);
 const fs = require(`fs`);
 
-const generateHTML = ({ name, descritpion, usage, github, credits, communication }) =>
+const generateHTML = ({ name, descritpion, usage, github, credits, communication, data }) =>
     `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +40,10 @@ const generateHTML = ({ name, descritpion, usage, github, credits, communication
         <h2 id="credits">Credits</h2>
         <p>${credits}</p>
         <h2 id="communication">Communication</h2>
-        <p>You can reach me ${communication}</p>
+        <p>You can reach me via ${communication}</p>
+        <ul>
+        <li>My Email/Phone Number is ${data}</li>
+        </ul>
     
 </body>
 </html>`;
@@ -78,6 +81,11 @@ inquirer
             name: `communication`,
             message: `What is your preferred method of communication?`,
             choices: [`Email`, `Text`, `Call`]
+        },
+        {
+            type: `input`,
+            name: `data`,
+            message: `Enter your Email or Phone Number`
         },
 
     ])
