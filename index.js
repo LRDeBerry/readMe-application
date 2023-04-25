@@ -17,7 +17,7 @@ const generateHTML = ({ name, descritpion, usage, github, credits, communication
 <body>
 <header class="p-5 mb-4 header bg-light">
     <div class="container">
-        <h1 class="display-4">Hello there, my name is ${name}</h1>
+        <h1 class="display-4">${name}</h1>
         <h2>Description</h2>
         <p>${descritpion}.</p>
         <h2>Table Of Contents</h2>
@@ -26,7 +26,7 @@ const generateHTML = ({ name, descritpion, usage, github, credits, communication
         <a href="#github">Github</a>
         </li>
         <li>
-        <a href=>"#usage">Usage</a>
+        <a href="#usage">Usage</a>
         </li>
         <li>
         <a href="credits">Credits</a>
